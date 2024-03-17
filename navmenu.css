@@ -5,17 +5,14 @@
   margin: 0;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-
-body {
-  display: flex;
-  justify-content: center;
-  min-height: 100vh;
-  background: #252839;
+nav{
+ margin-top: 20px;  
 }
+
 ul {
   position: relative;
   display: flex;
-  justify-content: flex-start;
+  justify-content:center;
   flex-direction: row;
   gap: 30px;
 }
@@ -30,7 +27,7 @@ ul li a {
   line-height: 1em;
   text-transform: uppercase;
   color: transparent;
-  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.988);
 }
 ul li a::before {
   content: attr(data-text);
