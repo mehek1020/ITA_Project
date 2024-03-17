@@ -16,14 +16,32 @@
   
 body {
   background-color: rgb(35, 30, 30);
+  /*background:  linear-gradient(to bottom, #231E1E,#5c2913);*/
 }
 hr{
   margin: 30px;
   color: #BCA79D;
 }
 
-h1{
+h3{
   margin-left: 30px;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family:"Verdana, Geneva, Tahoma, sans-serif";
   color: #BCA79D;
+}
+.map {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.footbackground{
+  background: url(footer.png);
+  object-fit: cover;
+  height: 80px;
+  width: 100%;
+}
+
+footer{
+      margin-bottom: 0px;
+      width: 100%; 
 }

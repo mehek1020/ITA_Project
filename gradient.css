@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+h1 {
+  --font-size: clamp(50pt, 10pt + 20pt, 10pt);
+  color: hsl(0, 0%, 100%);
+  font-size: var(--font-size);
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.gradhead {
+  position: absolute;
+  inset: 0;
+  background: rgb(202, 201, 201);
+  mix-blend-mode: darken;
+  filter: brightness(2);
+  overflow: hidden;
+  pointer-events: none;
+}
+
+@keyframes pop {
+  50% {
+    background-size: 100% 100%;
+  }
+}
+
+.gradText {
+  height: var(--size, 100%);
+  aspect-ratio: 1;
+  background: radial-gradient(
+    hsl(var(--h) 100% 70%) 25%,
+    transparent 50%
+  );
+  position: absolute;
+  display: inline-block;
+  animation: scale var(--s, 2s) var(--d, 0s) infinite alternate;
+  left: var(--x, 0);
+  top: var(--y, 0);
+  scale: 40;
+  translate: -50% -50%;
+  mix-blend-mode: multiply;
+  filter: blur(2px);
+}
+
+.gradText:nth-of-type(1) {
+  --x: 10%;
+  --y: 25%;
+  --h: 277;
+  --s2: 6;
+  --d: -0.25s;
+  --s: 6s;
+}
+
+.gradText:nth-of-type(2) {
+  --x: 50%;
+  --y: 45%;
+  --h: 140;
+  --s2: 5;
+  --d: -0.75s;
+  --s: 5s;
+}
+
+.gradText:nth-of-type(3) {
+  --x: 65%;
+  --y: 75%;
+  --h: 210;
+  --s2: 3;
+  --d: -0.5s;
+  --s: 3s;
+}
+
+.gradText:nth-of-type(4) {
+  --x: 85%;
+  --y: 15%;
+  --h: 320;
+  --s2: 5;
+  --d: -1s;
+  --s: 2s;
+}
+
+.gradText:nth-of-type(5) {
+  --x: 15%;
+  --y: 100%;
+  --h: 40;
+  --s2: 3;
+  --d: -1s;
+  --s: 2s;
+}
+
+@keyframes scale {
+  to {
+    scale: var(--s2);
+  }
+}
