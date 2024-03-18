@@ -3,7 +3,7 @@ body {
     linear-gradient(to left, #ba5f1ee3,#3b1a02e5);
 }
   .main-page, .secondary-page {
-    position: relative;
+    position: fixed;
     display: flex;
     flex-direction: column;
     align-items:center;
@@ -12,6 +12,7 @@ body {
     margin-right: -0.5cm;
     margin-top: -1cm;
     transition: transform 0.5s ease-in-out;
+    
   }
   
   .secondary-page {
@@ -34,7 +35,7 @@ body {
         border-radius: 50px;
         background: none;
         padding: 25px 75px;
-        margin-top: -7cm;
+        margin-top: -11cm;
       }
       
       .btn a {

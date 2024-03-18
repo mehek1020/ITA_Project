@@ -18,20 +18,31 @@ body {
   background-color: rgb(35, 30, 30);
   /*background:  linear-gradient(to bottom, #231E1E,#5c2913);*/
 }
+
 hr{
   margin: 30px;
   color: #BCA79D;
 }
 
-h3{
+h2{
   margin-left: 30px;
   font-family:"Verdana, Geneva, Tahoma, sans-serif";
   color: #BCA79D;
+  font-style: oblique;
+ 
 }
 .map {
   margin-top: 15px;
   display: flex;
   justify-content: center;
+}
+
+.para p{
+  margin-left: 30px;
+  margin-top: 6px;
+  font-family:'Times New Roman', Times, serif;
+  font-size: medium;
+  color: #BCA79D;
 }
 
 .footbackground{
