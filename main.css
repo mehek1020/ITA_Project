@@ -35,13 +35,16 @@ h3{
 }
 
 .footbackground{
+  margin-top: 30px;
   background: url(footer.png);
-  object-fit: cover;
   height: 80px;
   width: 100%;
 }
 
-footer{
-      margin-bottom: 0px;
-      width: 100%; 
+.footerp{
+ color: rgb(44, 42, 36);
+
+}
+.footer-info{
+  text-align: center;
 }
