@@ -1,6 +1,5 @@
 body {
-    background:
-    linear-gradient(to left, #ba5f1ee3,#3b1a02e5);
+    background-color: #040101;
 }
   .main-page, .secondary-page {
     position: fixed;

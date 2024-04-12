@@ -17,22 +17,25 @@
   justify-content: space-between; /* Distributes items evenly with space between them */
   flex-wrap: wrap; /* Allows items to wrap to the next row */
   gap: 13px; /* Adds space between items */
+
 }
 
 .container .card {
   width: calc((100% - 40px) / 4); /* Calculates width with space in between */
   position: relative;
+
 }
 
 .container .card .face {
   width: 100%;
   height: 200px;
   transition: 0.4s;
+  border-radius: 8px;
 }
 
 .container .card .face.face1 {
   position: relative;
-  background: #333;
+  background: #121110;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -43,9 +46,9 @@
 
 .container .card:hover .face.face1 {
   transform: translateY(0);
-  box-shadow: inset 0 0 20px whitesmoke, inset 20px 0 80px #f0f,
-    inset -20px 0 40px #0ff, inset 20px 0 300px #f0f, inset -20px 0 300px #0ff,
-    0 0 50px #fff, -10px 0 80px #f0f, 10px 0 80px #0ff;
+  box-shadow: inset 0 0 20px #f5cbb0, inset 20px 0 80px rgba(255, 0, 255, 0.873),
+    inset -20px 0 40px rgba(0, 255, 255, 0.827), inset 20px 0 300px rgba(255, 0, 255, 0.844), inset -20px 0 300px #0ff,
+    0 0 50px #f5cbb0, -10px 0 80px rgba(255, 0, 255, 0.848), 10px 0 80px #0ff;
 }
 
 .container .card .face.face1 .content {
@@ -76,7 +79,7 @@
 
 .container .card .face.face2 {
   position: relative;
-  background: whitesmoke;
+  background: rgb(245, 203, 176);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -88,11 +91,12 @@
 
 .container .card:hover .face.face2 {
   transform: translateY(0);
+  margin-top: -10px;
 }
 
 .container .card .face.face2 .content p,
 a {
-  font-size: 10pt;
+  font-size: pt;
   margin: 0;
   padding: 0;
   color: #333;
@@ -102,7 +106,7 @@ a {
   text-decoration: none;
   color: black;
   box-sizing: border-box;
-  outline: 1px dashed #333;
+  outline: 1px dashed #7a7373;
   padding: 10px;
   margin: 15px 0 0;
   display: inline-block;
