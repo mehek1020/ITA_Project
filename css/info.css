@@ -63,15 +63,7 @@ th {
   text-align: justify;
 }
 
-.cul {
-  border: 2px solid rgb(246, 245, 245);
-  border-radius: 25px;
-  margin: 15px;
-  width: 500px;
-  height: 250px;
-  object-fit: cover;
-}
-.his {
+img.cul {
   border: 2px solid rgb(246, 245, 245);
   border-radius: 25px;
   margin: 15px;
@@ -83,10 +75,16 @@ th {
 .info_container {
   display: flex;
   flex-direction: column;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20pt;
+  color: var(--main-color);
+  text-align: justify;
+  margin: 1% 2% 1% 2%;
 }
 
 .info_section {
   max-width: 100%;
+  margin-bottom: 2%;
 }
 
 .content {
@@ -97,6 +95,7 @@ th {
 
 .content p {
   flex: 1;
+  margin: 1%;
 }
 
 .content img {
